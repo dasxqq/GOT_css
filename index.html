@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Game of Thrones - Главная</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturCook:wght@700&display=swap"
+        rel="stylesheet"> <!--подключение шрифтов из гугла-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background: url('background1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Навигация */
+        .nav-tabs .nav-link {
+            color: #C0C0C0 !important; /* Цвет текста кнопок навигации */
+            background: rgba(0, 0, 0, 0.6); /* Полупрозрачный тёмный фон у неактивных вкладок*/
+            border: none; /* Убирает стандартные границы */
+        }
+
+        .nav-tabs .nav-link.active {
+            background: #8A0303 !important; /* Фон активной вкладки */
+            color: white !important; /* Цвет текста активной вкладки */
+            font-weight: bold;
+        }
+
+        /* Кнопки */
+        .btn-outline-primary {
+            color: #8A0303 !important; /* Красный цвет текста */
+            border-color: #8A0303 !important; /* Красная рамка */
+        }
+
+        .btn-outline-primary:hover {
+            background: #8A0303 !important; /* Красный фон при наведении */
+            color: white !important; /* Белый текст при наведении */
+        }
+
+        /* шапка */
+        header.card-header {
+            background: rgba(0, 0, 0, 0.4) !important;
+            border-bottom: 3px solid #8A0303; /* красная нижняя граница */
+            padding: 30px 0; /* высота */
+        }
+
+        /* заголовок (Game of Thrones) */
+        header.card-header h3 {
+            font-family: "Cinzel", serif;
+            font-size: 64px;
+            color: #C0C0C0;
+            text-shadow: 0 0 15px #8A0303;
+            /* красное свечение вокруг текста */
+        }
+
+        /* Заголовки разделов сюжет саундреки и награды сериала */
+        .section-highlight h6 {
+            font-family: "UnifrakturCook", serif;
+            font-size: 32px;
+            color: #8A0303;
+        }
+
+        /* карточки разделов */
+        .section-highlight {
+            background: rgba(0, 0, 0, 0.6);
+            border-left: 5px solid #8A0303;
+            color: #f0f0f0;
+        }
+
+        /* футер */
+        footer {
+            background: rgba(0, 0, 0, 0.7) !important;
+            color: #C0C0C0 !important;
+        }
+
+        /* подпись под фото */
+        figcaption {
+            color: #323232 !important;
+            font-family: Cinzel, serif;
+        }
+
+        /* стиль кнопки "к началу страницы" */
+        a.btn-outline-secondary {
+            color: #ccc7b0 !important;
+            /* цвет текста  */
+            border-color: #ccc7b0 !important;
+            /* цвет границы */
+        }
+
+        a.btn-outline-secondary:active {
+            background-color: #FFD700 !important;
+            /* фон при наведении */
+        }
+
+        h5.card-title { /* заголовки регистрация, главная и персонажи (вкладки) */
+            font-family: "UnifrakturCook", serif !important;
+            font-size: 24px !important;
+            color: #450f97 !important;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body style="background: url('background1.jpeg') no-repeat center center fixed; background-size: cover;">
+
+    <div class="container">
+
+        <header class="card card-header">
+            <div class="card-body">
+                <h3 class="card-title text-center">
+                    Game of Thrones
+                </h3>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"> <a class="nav-link active" href="./index.html">Главная</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="./characters.html">Главные персонажи</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./form.html">Записаться на оффлайн просмотр</a></li>
+                    <li class="nav-item"> <a class="nav-link"
+                            href="https://kinogo.bike/25524-igra-prestolow-1-season.html"><img src="ch.PNG"
+                                height="30px"></a></li>
+                </ul>
+            </div>
+
+            <div class="card-body">
+
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-outline-primary" href="#section_1">Награды</a>
+                        <a class="btn btn-outline-primary" href="#section_2">Сюжет</a>
+                        <a class="btn btn-outline-primary" href="#section_3">Саундтреки</a>
+                    </div>
+                </div>
+
+                <h5 class='card-title text-center' id='top_of_page'>Главная</h5>
+
+
+
+                <div class="section-highlight" id="section_1">
+                    <h6 class="card-subtitle mb-3">Награды сериала</h6>
+                    <p class="card-text">Сериал «Игра престолов» получил огромное количество наград и признаний. Он
+                        выиграл 59 премий Эмми из 160 номинаций, включая 4 раза <strong>лучший драматический
+                            сериал</strong>. Питер
+                        Динклэйдж получил несколько премий за лучшую мужскую роль второго плана. Сериал также награжден
+                        премиями за лучший кастинг, музыку, дизайн титров, монтаж, грим, визуальные эффекты и постановку
+                        трюков. Среди других наград — премии Британской академии телевидения (BAFTA), Золотой глобус
+                        (несколько номинаций), премии Сатурн и другие награды в области фэнтези и драмы.</p>
+                    <p class="card-text">Основные награды и номинации сериала::</p>
+                    <ul>
+                        <li><strong>59 премий Эмми</strong> (в том числе лучший драматический сериал 2015, 2016, 2018,
+                            2019)</li>
+                        <li>Многочисленные признания актеров, особенно <strong>Питера Динклэйджа</strong></li>
+                        <li>Премии BAFTA и номинации на Золотой глобус</li>
+                        <li>Много наград в категориях <strong>визуальных и технических достижений</strong> (грим,
+                            спецэффекты, музыка)
+                        </li>
+                        <li>Приз за <strong>лучшие вступительные титры, монтаж и постановку трюков</strong></li>
+                    </ul>
+                    Это один из самых отмеченных наградами сериалов современности, признанный как
+                    критиками, так и зрителями за качество всех аспектов производства и актерской игры.</p>
+                    <div class="text-center mt-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
+                    </div>
+                </div><br>
+
+                <figure style="text-align: center;">
+                    <img src="emmys.jpg" width="500" alt="Каст Игры престолов на Эмми">
+                    <figcaption style="
+        color: rgb(0, 0, 0);
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 500;">
+                        2019 — каст «Игры престолов» на церемонии Эмми
+                    </figcaption>
+                </figure>
+
+                <div class="section-highlight mt-4" id="section_2">
+                    <h6 class="card-subtitle mb-3">Сюжет</h6>
+                    <ul>
+                        <li><b>Сезон 1:</b> В Семь Королевств прибывает король Роберт Баратеон, приглашая Неда Старка
+                            стать его
+                            Десницей.
+                            <ul>
+                                <li>Нед расследует смерть прежней Десницы.</li>
+                                <li>Раскрываются тайны дома Ланнистеров.</li>
+                                <li>За морем Таргариены ищут союзников для возвращения престола.</li>
+                                <li>На Севере Ночной дозор сталкивается с Белыми ходоками.</li>
+                            </ul>
+                        </li><br>
+
+                        <li><b>Сезон 2:</b> После смерти короля начинается гражданская война — претенденты борются за
+                            трон.
+                            <ul>
+                                <li>Север под предводительством Робба Старка объявляет независимость.</li>
+                                <li>Ланнистеры удерживают столицу и власть.</li>
+                                <li>Станнис и Ренли Баратеоны вступают в борьбу друг с другом.</li>
+                                <li>Джон Сноу продолжает службу в Ночном дозоре.</li>
+                            </ul>
+                        </li><br>
+
+                        <li><b>Сезон 3:</b> Усиление власти Таргариенов и трагедия Дома Старков.
+                            <ul>
+                                <li>Дейенерис освобождает рабов и создаёт армию.</li>
+                                <li>Происходит Красная свадьба — уничтожение Старков.</li>
+                                <li>Арья начинает путь мести и обучения у Безликих.</li>
+                                <li>Джон исследует земли за Стеной и сталкивается с угрозой одичалых.</li>
+                            </ul>
+                        </li><br>
+
+                        <li><b>Сезон 4:</b> Политические интриги усиливаются, судьбы героев меняются.
+                            <ul>
+                                <li>Джофри погибает на собственной свадьбе.</li>
+                                <li>Тирион обвинён в убийстве и бежит из столицы.</li>
+                                <li>Арья возвращается в Вестерос.</li>
+                                <li>Угроза Белых ходоков становится всё сильнее.</li>
+                            </ul>
+                        </li><br>
+
+                        <li><b>Сезон 5:</b> Борьба за власть и религиозный фанатизм в Королевской Гавани.
+                            <ul>
+                                <li>Дейенерис управляет Миэрином и теряет контроль над городом.</li>
+                                <li>Орден «Воробьёв» устанавливает власть религии.</li>
+                                <li>Арья совершенствует мастерство убийцы в Браавосе.</li>
+                                <li>Север готовится к битве с армией мёртвых.</li>
+                            </ul>
+                        </li><br>
+                        <li><b>Сезон 6:</b> Возвращение Джона Сноу и объединение сил.
+                            <ul>
+                                <li>Джон воскресает и собирает войско против Рамси Болтона.</li>
+                                <li>Битва бастардов приводит к возвращению Винтерфелла Старкам.</li>
+                                <li>Дейенерис отправляется в Вестерос.</li>
+                                <li>Финальная коалиция формируется против Белых ходоков.</li>
+                            </ul><br>
+                        </li>
+                        <li><b>Сезоны 7–8:</b> Завершающие события войны и финал борьбы за трон.
+                            <ul>
+                                <li>Армия мёртвых нападает на Винтерфелл, но терпит поражение.</li>
+                                <li>Дейенерис захватывает столицу, но превращается в тирана.</li>
+                                <li>Джон убивает Дейенерис ради спасения мира.</li>
+                                <li>Бран Старк становится новым королём Шести Королевств.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="text-center mt-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
+                    </div>
+                </div>
+
+
+                <div class="section-highlight mt-4" id="section_3">
+                    <h6 class="card-subtitle mb-3">Саундтреки</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li><b>Main Title:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Dragonstone:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>King of the North:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Mhysa:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Light of the Seven:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>The Night King:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>The Rains of Castamere:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>A Lannister Always Pays His Debts:</b> Ramin Djawadi</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li><b>The Winds of Winter:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>The Children:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Winter Is Here:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Home:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Bastard Executioner:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>The Tower:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Hold the Door:</b> Ramin Djawadi</li>
+                                <br>
+                                <li><b>Blood of My Blood:</b> Ramin Djawadi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <a class="btn btn-sm btn-outline-secondary" href="#top_of_page">к началу страницы</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="card card-footer" style="background: rgba(0,0,0,0.6); color: rgb(255, 204, 36);">
+        <div class="card-body text-center">
+            <p>© Game of Thrones</p>
+        </div>
+    </footer>
+    </div>
+
+    <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        // Подсветка активного раздела при скролле
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.section-highlight');
+            const navLinks = document.querySelectorAll('.btn-group .btn');
+
+            window.addEventListener('scroll', function () {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 100)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
